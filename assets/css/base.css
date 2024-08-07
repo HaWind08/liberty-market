@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-one: #7453fc;
+    --color-two: #282b2f;
+    --color-three: #3CF;
+    --bg-1: #282b2f;
+    --font: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* Button */
+.button {
+    display: inline-block;
+    background: yellow;
+    color: #fff;
+    padding: 16px 30px;
+    border-radius: 25px;
+    border: var(--color-one) solid 1px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.button::after {
+    content: '';
+    background: #fff;
+    /* width: 134px; */
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-one {
+    background: var(--color-one);
+}
+
+.button-one:hover {
+    background: #fff;
+    color: var(--color-one);
+    border-color: #fff;
+}
+
+.button-trans {
+    background: transparent;
+    margin-right: 12px;
+}
+
+.button-trans:hover {
+    background: var(--color-one);
+}
+
+.button-large {
+    width: 100%;
+    text-align: center;
+}
+
+/* End button */
+
+/* Head title */
+.head-one {
+    text-align: center;
+    margin: 0 0 80px;
+    padding: 30px 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.head-one::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: var(--color-one);
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50px);
+}
+
+.head-one em {
+    font-style: normal;
+    color: var(--color-one);
+}
+
+.head-two-left {
+    margin: 0;
+    padding: 30px 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.head-two-left::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.head-three {
+    margin: 0;
+    padding: 30px 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.head-three::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: var(--color-one);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.head-three em {
+    font-style: normal;
+    color: var(--color-one);
+}
+/* End head title */

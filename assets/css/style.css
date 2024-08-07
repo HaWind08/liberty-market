@@ -1,0 +1,445 @@
+/* Header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    z-index: 9999;
+}
+
+.header .inner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background: #ddd;
+    padding: 12px 30px;
+}
+
+.header .inner-logo img {
+    width: 223px;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li {
+    margin-left: 24px;
+}
+
+.header ul li a {
+    color: var(--color-two);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 18px;
+}
+
+.header ul li a:hover,
+.header a.active {
+    background-color: var(--color-one);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* End header */
+
+
+/* Main banner */
+.main-banner {
+    background: url(../images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 290px 0 160px;
+}
+
+.main-banner .inner-wrap {
+    display: flex;
+
+}
+
+.main-banner .inner-content {
+    width: 50%;
+}
+
+.main-banner .inner-sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 0 0 16px;
+}
+
+.main-banner .inner-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 30px;
+}
+
+.main-banner .inner-desc {
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0 0 30px;
+}
+
+.main-banner .inner-image {
+    width: 50%;
+    text-align: right;
+}
+
+.inner-image .inner-image img {
+    width: 100%;
+}
+
+/* End main banner */
+
+
+/* categories collections */
+.categories-collections {
+    padding: 120px 0 150px;
+    background: url(../images/dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+/* Categories */
+.categories {
+    margin-bottom: 140px;
+}
+
+.categories .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories .inner-box {
+    border: 1px solid #404245;
+    background: var(--color-two);
+    padding: 30px;
+    width: calc(100%/6 - 22px);
+    border-radius: 20px;
+    position: relative;
+}
+
+.categories .inner-image {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.categories .inner-desc {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.categories .arrow-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: var(--color-one);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    bottom: calc(0% - 23px);
+    left: calc(50% - 23px);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.categories .arrow-icon a:hover {
+    background: var(--color-one);
+    color: #fff;
+}
+
+.categories .inner-box:hover .arrow-icon a {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* End categories */
+
+/* collections */
+.collections .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collections .inner-box {
+    width: calc(100%/3 - 22px);
+    border-radius: 20px;
+    background: var(--color-two);
+    position: relative;
+}
+
+.collections .inner-image img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.collections .inner-content {
+    padding: 30px 30px 60px;
+}
+
+.collections .inner-title {
+    margin: 0 0 20px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+}
+
+.collections .inner-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collections .inner-desc,
+.collections .inner-desc-pos {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.collections .inner-desc-pos {
+    text-align: right;
+}
+
+.collections strong {
+    font-size: 18px;
+}
+
+.collections .inner-button {
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* End collections */
+
+/* End categories collections */
+
+
+/* create nft */
+.create-nft {
+    background: url(../images/main-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.create-nft .box-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.create-nft .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-nft .inner-box {
+    width: calc(100%/3 - 22px);
+    position: relative;
+}
+
+.create-nft .inner-icon {
+    width: 62px;
+    height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.create-nft img {
+    object-fit: cover;
+}
+
+.create-nft .inner-box .inner-title {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.create-nft .inner-box .inner-desc {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.create-nft .inner-color {
+    color: var(--color-three);
+}
+
+.create-nft .box-one::before,
+.create-nft .box-two::before {
+    content: '';
+    width: 2px;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.create-nft .inner-number {
+    position: absolute;
+    top: -24px;
+    right: -14px;
+    font-weight: 600;
+}
+
+/* End create nft */
+
+
+/* currently market */
+.currently-market {
+    background: url(../images/dark-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.currently-market .box-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.currently-market .inner-menu ul {
+    display: flex;
+}
+
+.currently-market .inner-menu li {
+    margin-left: 16px;
+}
+
+.currently-market .inner-menu a {
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.currently-market .inner-menu a:hover,
+.currently-market .inner-menu a.active {
+    background: var(--color-one);
+}
+
+.currently-market .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.currently-market .inner-box {
+    display: flex;
+    padding: 30px;
+    background: var(--bg-1);
+    border: 1px solid #404245;
+    border-radius: 20px;
+    width: calc(100%/2 - 16px);
+    margin-bottom: 32px;
+    
+}
+
+.currently-market .inner-image img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.currently-market .inner-content {
+    margin-left: 30px;
+    width: 100%;
+}
+
+.currently-market .inner-content .inner-title {
+    margin-top: 0;
+}
+
+.currently-market .inner-author {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: #ddd solid 1px;
+}
+
+.currently-market .inner-name {
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.currently-market .inner-name .libertyart {
+    color: var(--color-one);
+}
+
+.currently-market .inner-content img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.currently-market .inner-info {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.currently-market .inner-info-right {
+    text-align: right;
+}
+
+.currently-market .inner-view {
+    color: var(--color-one);
+    border-bottom: 1px solid var(--color-one);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.currently-market strong {
+    font-size: 20px;
+}
+/* End currently market */
+
+/* Footer */
+.footer {
+    background: linear-gradient(132deg, rgba(125, 90, 254, 1) 25%, rgba(160, 84, 244, 1) 100%);
+    padding: 40px 0 ;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    font-weight: 500;
+}
+/* End footer */
